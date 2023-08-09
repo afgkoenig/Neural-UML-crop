@@ -127,7 +127,7 @@ def main():
 
             num = liste_numero.pop(0)
             liste_numero.append(num)
-            texte = f"path: ../../  # dataset root dir \ntrain: test_V4/images/dataset{i}  # train images (relative to 'path') \nval: test_V4/images/validation{i}  # val images (relative to 'path') \ntest: test_V4/images/test{i} # test images (optional) \n# Classes \nnames: \n  0: navigable \n  1: inheritance \n  2: realization \n  3: dependency \n  4: aggregation \n  5: composition \n  6: classe"
+            texte = f"path: ../../  # dataset root dir \ntrain: Neural-UML-crop/images/dataset{i}  # train images (relative to 'path') \nval: Neural-UML-crop/images/validation{i}  # val images (relative to 'path') \ntest: Neural-UML-crop/images/test{i} # test images (optional) \n# Classes \nnames: \n  0: navigable \n  1: inheritance \n  2: realization \n  3: dependency \n  4: aggregation \n  5: composition \n  6: classe"
             with open(f"./train{i}.yaml","w") as yaml:
                 yaml.write(texte)
 
